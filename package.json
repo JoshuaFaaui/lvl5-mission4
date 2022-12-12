@@ -1,0 +1,32 @@
+{
+  "name": "lvl5-mission4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshuaFaaui/lvl5-mission4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoshuaFaaui/lvl5-mission4/issues"
+  },
+  "homepage": "https://github.com/JoshuaFaaui/lvl5-mission4#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jest": "^29.3.1",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.3",
+    "typescript": "^4.9.4"
+  }
+}
