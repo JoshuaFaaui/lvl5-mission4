@@ -43,8 +43,8 @@ app.post("/converter/:car_value/:risk_rating", (req, res) => {
   array.push(converter(car_value,risk_rating));
 })
 
-app.listen(PORT, () => {
-  console.log("listening to", PORT);
-});
+// app.listen(PORT, () => {
+//   console.log("listening to", PORT);
+// });
 
 module.exports = {converter}
