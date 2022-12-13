@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "react-scripts test --config"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
