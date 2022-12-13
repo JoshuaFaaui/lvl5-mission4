@@ -7,7 +7,18 @@ on:
 jobs:
   unit-testing:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: 'v14.20.0'
+
     steps:
       - uses: actions/checkout@main
-      - run: npm i react-scripts
-      - run: npm run test
+      - name: use node.js ${{matrix.node-version}}
+        uses: actions/setup-node@v1
+        with: 
+          node-version: ${{matrix.node-version}}
+      - name: npm install
+        run: npm ci
+      - name: tests
+        run: npm test
