@@ -1,8 +1,12 @@
 name: unit testing
+on:
+  push:
+    branches: 
+     - main
 
-runs on: ubuntu-latest
-
-steps:
-  - uses: actions/checkout@v3
-  - run: npm i react-scripts
-  - run: npm run test
+jobs:
+  runs on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v3
+    - run: npm i react-scripts
+    - run: npm run test
