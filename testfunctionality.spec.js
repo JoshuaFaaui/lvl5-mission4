@@ -8,7 +8,7 @@ describe('functionalitys being tested', () => {
     },
     {
       scenario: "converter test 2 'number as a string with an integer'",
-      input: ["400", 3],
+      input: ["400", 4],
       outcome: 1 && 12,
     },
     
