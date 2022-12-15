@@ -44,7 +44,7 @@ app.post("/converter/:car_value/:risk_rating", (req, res) => {
 })
 
 app.listen(PORT, () => {
-  console.log("listening to", PORT);
+  console.log("listening", PORT);
 });
 
 module.exports = {converter}
