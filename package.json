@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --forceExit"
+    "test": "jest --forceExit",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
