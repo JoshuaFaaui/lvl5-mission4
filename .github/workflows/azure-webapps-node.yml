@@ -33,7 +33,9 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: node-app
-        path: .
+        path: |
+         .
+         !./node_modules
 
   deploy:
     permissions:
