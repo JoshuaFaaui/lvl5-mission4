@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_WEBAPP_NAME: TurnersCarAuctions    # set this to your application's name
-  AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
-  NODE_VERSION: 'v14.20.0'                # set this to the node version to use
+  AZURE_WEBAPP_NAME: TurnersCarAuctions  
+  AZURE_WEBAPP_PACKAGE_PATH: '.'    
+  NODE_VERSION: 'v14.20.0'               
 
 permissions:
   contents: read
