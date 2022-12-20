@@ -8,7 +8,7 @@ app.use(express.json())
 const PORT = process.env.PORT || 4002
 
 const array = [{ "monthly_premium": 50, "yearly_premium": 330 }];
-app.use('/convert', (req, res) => {
+app.use('/', (req, res) => {
     res.send(array)
 })
 
@@ -37,7 +37,7 @@ const converter = (car_value, risk_rating) => {
   return { monthly_premium: monthly, yearly_premium: yearly };
 }
 
-app.post("/converter/:car_value/:risk_rating", (req, res) => {
+app.post("/convert", (req, res) => {
   const car_value = parseFloat(req.body.car_value);
   const risk_rating = parseFloat(req.body.risk_rating);
   array.push(converter(car_value,risk_rating));
